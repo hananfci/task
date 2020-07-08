@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+
+  <title>Drew's Analytics Dashboard</title>
+
+  <!-- Favicons -->
+  <link href="img/favicon.png" rel="icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Bootstrap core CSS -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!--external css-->
+  <link href="lib/font-awesome/css/font-awesome.css" rel="stylesheet" />
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style-responsive.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gridstack@1.1.2/dist/gridstack.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gridstack@1.1.1/dist/gridstack-extra.css"/>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+ 
+  <style>
+
+  </style>
+<style>
+  .grid-stack-item-content {
+    color: #2c3e50;
+    text-align: center;
+    background-color: transparent!important;
+    border: 2px dotted #18bc9c;;
+}
+  p {
+    margin: 9px 0 10px;
+}
+#main-content {
+    margin-left: 80px;
+    margin-right: 58px;
+}
+
+.grid-stack {
+  background: lightgoldenrodyellow;
+}
+
+.grid-stack-item-content {
+  color: #2c3e50;
+  text-align: center;
+  background-color: #18bc9c;
+}
+.wrapper {
+    margin-top: 101px;
+}
+</style>
+</head>
+
+<body>
+  <section id="container"> 
+        <!--header start-->
+    <header class="header black-bg">
+    
+      <!--logo start-->
+      <a href="#" class="logo"><b>DASH<span>bang</span></b></a>
+      <!--logo end-->
+    
+      <div class="top-menu">
+        <ul class="nav pull-right top-menu">
+          <li>
+            <p class="centered"><a href="#"><img src="img/ui-sam.jpg" class="img-circle" width="80"> Hanan Mustafa</a></p></li>
+        </ul>
+      </div>
+    </header>
+    <!--header end-->
+    <!-- **********************************************************************************************************************************************************
+        MAIN SIDEBAR MENU
+        *********************************************************************************************************************************************************** -->
+    <!--sidebar start-->
+ 
+    <!--sidebar end-->
+    <!-- **********************************************************************************************************************************************************
+        MAIN CONTENT
+        *********************************************************************************************************************************************************** -->
+    <!--main content start-->
+    <section id="main-content">
+      <section class="wrapper">
+        <!-- page start-->
+        <div class="row mt">
+          <div class="col-sm-3">
+            <section class="panel">
+              <div class="panel-body">
+                <a href="#" class="btn btn-compose js-addWidget">
+                  <i class="fa fa-plus"></i> New Widget
+                  </a>
+                  <a href="#" class="btn  js-addchart">
+                    <i class="fa fa-plus"></i> New chart
+                    </a>
+              </div>
+            </section>
+            <div class="grid-stack dragable-grid-stack">
+              <div class="grid-stack-item" data-gs-x="0" data-gs-y="0" data-gs-width="12" data-gs-height="3"><div class="grid-stack-item-content">
+                 <section class="panel">              
+                <div class="panel-body ">           
+                 <div id="chartdiv" class='draggable' ></div>
+                </div>
+              </section>
+            </div>
+          </div>
+           <div class="grid-stack-item" data-gs-x="3" data-gs-y="0" data-gs-width="12" data-gs-height="3"><div class="grid-stack-item-content"> 
+              <section class="panel">
+            <div class="panel-body">
+              <div id="piechart" class='draggable'></div>
+            </div>
+          </section>
+        </div>
+         </div>
+         </div>
+          </div>
+          <div class="col-sm-9">
+            <section class="panel">
+              <header class="panel-heading wht-bg">
+                <h4 class="gen-case">
+                   Drag widget into an  open Dashboard
+                   
+                  </h4>
+              </header>
+            
+              <div class="grid-stack-container">
+                  <div class="grid-stack droppable-grid-stack grid-stack-6" >
+                    
+                  </div>
+              </div>
+           <!--    <div  id= "#draggable" class="ui-widget-content draggable">
+                <p>Drag me to my target</p>
+              </div>
+               
+              <div id= "#droppable"  class="ui-widget-header droppable">
+                <p>Drop here</p>
+              </div> -->
+            </section>
+           <!--  <section class="panel">
+              <div  class="droppable" style="height:150px">
+                <p>Drop here</p>
+              </div> 
+            </section> -->
+          </div>
+        </div>
+      </section>
+      <!-- /wrapper -->
+    </section>
+    <!-- /MAIN CONTENT -->
+    <!--main content end-->
+    <!--footer start-->
+    <footer class="site-footer">
+      <div class="text-center">
+        <p>
+          &copy; Copyrights . All Rights Reserved
+        </p>
+      </div>
+    </footer>
+    <!--footer end-->
+  </section>
+
+
+<!--   <linl href="https://cdn.jsdelivr.net/npm/gridstack@1.1.2/dist/gridstack.min.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/gridstack@1.1.2/dist/gridstack.all.js"></script>
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src=" https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script> -->
+
+  <script src="lib/jquery.js"></script>
+  <script src="lib/gridstack.js"></script>
+  <script src="lib/jquery-ui.js"></script>
+  <script src="lib/gridstack.jQueryUI.js"></script>
+ 
+  <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+
+<script src="https://www.amcharts.com/lib/4/core.js"></script>
+<script src="https://www.amcharts.com/lib/4/charts.js"></script>
+<script src="https://www.amcharts.com/lib/4/themes/animated.js"></script>
+<script src="lib/app.js"></script>
+
+</body>
+
+</html>
