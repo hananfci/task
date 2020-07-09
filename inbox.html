@@ -53,6 +53,21 @@
 .wrapper {
     margin-top: 101px;
 }
+.btn-action {
+    background: #4ECDC4;
+    padding: 12px 0;
+    text-align: center;
+    width: 10%;
+    color: #fff;
+}
+.rtldir{
+  direction:rtl;
+  padding-top:10px;
+}
+.displaynone{
+  display:none;
+}
+
 </style>
 </head>
 
@@ -73,15 +88,7 @@
       </div>
     </header>
     <!--header end-->
-    <!-- **********************************************************************************************************************************************************
-        MAIN SIDEBAR MENU
-        *********************************************************************************************************************************************************** -->
-    <!--sidebar start-->
- 
-    <!--sidebar end-->
-    <!-- **********************************************************************************************************************************************************
-        MAIN CONTENT
-        *********************************************************************************************************************************************************** -->
+  
     <!--main content start-->
     <section id="main-content">
       <section class="wrapper">
@@ -90,34 +97,34 @@
           <div class="col-sm-3">
             <section class="panel">
               <div class="panel-body">
-                <a href="#" class="btn btn-compose js-addWidget">
+                <!-- <a href="#" class="btn btn-compose js-addWidget">
                   <i class="fa fa-plus"></i> New Widget
-                  </a>
-                  <a href="#" class="btn  js-addchart">
-                    <i class="fa fa-plus"></i> New chart
+                  </a> -->
+                  <a href="#" class="btn btn btn-compose" id="addchart">
+                    <i class="fa fa-plus"></i> New chart Widget
                     </a>
               </div>
             </section>
             <div class="grid-stack dragable-grid-stack">
-              <div class="grid-stack-item" data-gs-x="0" data-gs-y="0" data-gs-width="12" data-gs-height="3"><div class="grid-stack-item-content">
+      <!--    <div class="grid-stack-item" data-gs-x="0" data-gs-y="0" data-gs-width="12" data-gs-height="3"><div class="grid-stack-item-content">
                  <section class="panel">              
                 <div class="panel-body ">           
                  <div id="chartdiv" class='draggable' ></div>
                 </div>
               </section>
             </div>
-          </div>
-           <div class="grid-stack-item" data-gs-x="3" data-gs-y="0" data-gs-width="12" data-gs-height="3"><div class="grid-stack-item-content"> 
+          </div>  -->
+       <!--   <div class="grid-stack-item" data-gs-x="3" data-gs-y="0" data-gs-width="12" data-gs-height="3"><div class="grid-stack-item-content"> 
               <section class="panel">
             <div class="panel-body">
               <div id="piechart" class='draggable'></div>
             </div>
           </section>
         </div>
-         </div>
+         </div> --> 
          </div>
           </div>
-          <div class="col-sm-9">
+          <div class="col-sm-9 col-xs-12">
             <section class="panel">
               <header class="panel-heading wht-bg">
                 <h4 class="gen-case">
@@ -127,30 +134,35 @@
               </header>
             
               <div class="grid-stack-container">
-                  <div class="grid-stack droppable-grid-stack grid-stack-6" >
+                  <div class="grid-stack droppable-grid-stack" >
                     
                   </div>
               </div>
-           <!--    <div  id= "#draggable" class="ui-widget-content draggable">
-                <p>Drag me to my target</p>
-              </div>
-               
-              <div id= "#droppable"  class="ui-widget-header droppable">
-                <p>Drop here</p>
-              </div> -->
+          
             </section>
-           <!--  <section class="panel">
-              <div  class="droppable" style="height:150px">
-                <p>Drop here</p>
-              </div> 
-            </section> -->
+            <section class="panel">
+            <div class="col-sm-12 rtldir" >
+            
+                <a onClick="saveGrid()" class="btn btn-action" href="#">
+                  <i class="fa fa-floppy-o"></i> save
+                </a>
+                <a onClick="loadGrid()" class="btn btn-action" href="#">
+                  <i class="fa fa-globe"></i> Load
+                </a>
+            
+              
+              <div class="alert alert-success displaynone" id="lblsave">
+              <label >Dashboard saved successfuly</label>
+              </div>
+            </div>
+           
+          </section>
           </div>
         </div>
       </section>
-      <!-- /wrapper -->
+    
     </section>
-    <!-- /MAIN CONTENT -->
-    <!--main content end-->
+
     <!--footer start-->
     <footer class="site-footer">
       <div class="text-center">
@@ -163,13 +175,10 @@
   </section>
 
 
-<!--   <linl href="https://cdn.jsdelivr.net/npm/gridstack@1.1.2/dist/gridstack.min.css"/>
-  <script src="https://cdn.jsdelivr.net/npm/gridstack@1.1.2/dist/gridstack.all.js"></script>
-  <script src="lib/jquery/jquery.min.js"></script>
-  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-  <script src=" https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script> -->
-
+ 
   <script src="lib/jquery.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+
   <script src="lib/gridstack.js"></script>
   <script src="lib/jquery-ui.js"></script>
   <script src="lib/gridstack.jQueryUI.js"></script>
